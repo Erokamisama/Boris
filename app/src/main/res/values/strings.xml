@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Boris</string>
+    <string name="activity_add_new_customer_lblFirstNameTxt">First Name:</string>
+    <string name="activity_add_new_customer_lblLastNametxt">Last Name:</string>
+    <string name="activity_add_new_customer_lblAgetxt">Age:</string>
+    <string name="activity_add_new_customer_LblGenderTxt">Gender:</string>
+    <string name="activity_add_new_customer_OptFemale">Female</string>
+    <string name="activity_add_new_customer_LblAdressTxt">Adress:</string>
+    <string name="activity_add_new_customer_LblCity">City:</string>
+    <string name="activity_add_new_customer_LblMail">Mail:</string>
+    <string name="addContact">Add customer</string>
+    <string name="searchContact">Search customer</string>
+    <string name="editContact">Edit</string>
+    <string name="deleteContact">Delete</string>
+    <string name="aboutUs">About us</string>
+    <string name="activity_add_new_customer_OptMale">Male</string>
+    <string name="aboutUsMsg">Boris is a customer management application</string>
+    <string name="informations">Details Client</string>
+    <string name="OK">OK</string>
+</resources>

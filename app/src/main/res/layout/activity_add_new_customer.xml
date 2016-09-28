@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".AddNewClient">
+
+        <EditText
+            android:id="@+id/activity_add_new_customer_textField_FirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_toEndOf="@+id/activity_add_new_customer_LblFirstName"
+            android:layout_toRightOf="@+id/activity_add_new_customer_LblFirstName"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/background_floating_material_light" />
+
+        <TextView
+            android:id="@+id/activity_add_new_customer_LblFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/activity_add_new_customer_textField_FirstName"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="false"
+            android:text="@string/activity_add_new_customer_lblFirstNameTxt"
+            android:textColor="@color/bright_foreground_inverse_material_light"
+            android:textIsSelectable="false"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/activity_add_new_customer_TextFieldLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/activity_add_new_customer_TxtFieldAge"
+            android:layout_alignLeft="@+id/activity_add_new_customer_textField_FirstName"
+            android:layout_alignRight="@+id/activity_add_new_customer_TxtFieldAge"
+            android:layout_alignStart="@+id/activity_add_new_customer_textField_FirstName"
+            android:layout_below="@+id/activity_add_new_customer_textField_FirstName"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/background_floating_material_light" />
+
+        <EditText
+            android:id="@+id/activity_add_new_customer_TxtFieldAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/activity_add_new_customer_TextFieldLastName"
+            android:layout_toEndOf="@+id/activity_add_new_customer_LblFirstName"
+            android:layout_toRightOf="@+id/activity_add_new_customer_LblFirstName"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="@color/background_floating_material_light" />
+
+        <TextView
+            android:id="@+id/activity_add_new_customer_LblLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/activity_add_new_customer_TextFieldLastName"
+            android:layout_marginTop="24dp"
+            android:text="@string/activity_add_new_customer_lblLastNametxt"
+            android:textColor="@color/bright_foreground_inverse_material_light"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/activity_add_new_customer_lblAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/activity_add_new_customer_TxtFieldAge"
+            android:layout_alignLeft="@+id/activity_add_new_customer_LblLastName"
+            android:layout_marginTop="24dp"
+            android:text="@string/activity_add_new_customer_lblAgetxt"
+            android:textColor="@color/bright_foreground_inverse_material_light"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/activity_add_new_customer_LblGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/activity_add_new_customer_lblAge"
+            android:layout_marginTop="27dp"
+            android:text="@string/activity_add_new_customer_LblGenderTxt"
+            android:textColor="@color/bright_foreground_inverse_material_light"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/activity_add_new_customer_LblAdress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/activity_add_new_customer_LblGender"
+            android:layout_alignRight="@+id/activity_add_new_customer_LblGender"
+            android:layout_below="@+id/activity_add_new_customer_LblGender"
+            android:layout_marginTop="58dp"
+            android:text="@string/activity_add_new_customer_LblAdressTxt"
+            android:textColor="@color/bright_foreground_inverse_material_light"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/activity_add_new_customer_LblCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/activity_add_new_customer_LblAdress"
+            android:layout_alignStart="@+id/activity_add_new_customer_LblAdress"
+            android:layout_below="@+id/activity_add_new_customer_LblAdress"
+            android:layout_marginTop="24dp"
+            android:text="@string/activity_add_new_customer_LblCity"
+            android:textColor="@color/bright_foreground_inverse_material_light"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/activity_add_new_customer_LblMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/activity_add_new_customer_LblCity"
+            android:layout_below="@+id/activity_add_new_customer_LblCity"
+            android:layout_marginTop="24dp"
+            android:text="@string/activity_add_new_customer_LblMail"
+            android:textColor="@color/bright_foreground_inverse_material_light"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/activity_add_new_customer_TxtFieldAdress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/activity_add_new_customer_LblAdress"
+            android:layout_alignEnd="@+id/activity_add_new_customer_TxtFieldAge"
+            android:layout_alignRight="@+id/activity_add_new_customer_TxtFieldAge"
+            android:ems="10"
+            android:inputType="textPostalAddress"
+            android:textColor="@color/background_floating_material_light"
+            android:layout_alignLeft="@+id/radioGroup"
+            android:layout_alignStart="@+id/radioGroup" />
+
+        <EditText
+            android:id="@+id/activity_add_new_customer_TxtFieldCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/activity_add_new_customer_LblCity"
+            android:layout_alignEnd="@+id/activity_add_new_customer_TxtFieldAdress"
+            android:layout_alignLeft="@+id/activity_add_new_customer_TxtFieldAdress"
+            android:layout_alignRight="@+id/activity_add_new_customer_TxtFieldAdress"
+            android:layout_alignStart="@+id/activity_add_new_customer_TxtFieldAdress"
+            android:ems="10"
+            android:inputType="textPostalAddress"
+            android:textColor="@color/background_floating_material_light" />
+
+        <EditText
+            android:id="@+id/activity_add_new_customer_TxtFieldMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/activity_add_new_customer_LblMail"
+            android:layout_alignLeft="@+id/activity_add_new_customer_TxtFieldCity"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignStart="@+id/activity_add_new_customer_TxtFieldCity"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/background_floating_material_light" />
+
+        <Button
+            android:id="@+id/activity_add_new_customer_BtnValidate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/activity_add_new_customer_TxtFieldMail"
+            android:layout_marginTop="50dp"
+            android:text="Validate" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/activity_add_new_customer_TxtFieldAdress"
+            android:layout_alignEnd="@+id/activity_add_new_customer_BtnValidate"
+            android:layout_alignRight="@+id/activity_add_new_customer_BtnValidate"
+            android:layout_below="@+id/activity_add_new_customer_lblAge"
+            android:layout_toRightOf="@+id/activity_add_new_customer_LblGender">
+
+            <RadioButton
+                android:id="@+id/activity_add_new_customer_OptMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/activity_add_new_customer_OptMale"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/foreground_material_dark" />
+
+            <RadioButton
+                android:id="@+id/activity_add_new_customer_OptFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_add_new_customer_OptFemale"
+                android:textColor="@color/foreground_material_dark" />
+        </RadioGroup>
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
+
+

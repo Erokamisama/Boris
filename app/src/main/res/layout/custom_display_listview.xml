@@ -1,0 +1,72 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ImageView
+        android:id="@+id/custom_layout_imgContact"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:paddingRight="15dp"
+        android:paddingTop="0dp" />
+    <TextView android:id="@+id/custom_layout_LastName"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:paddingRight="15dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/custom_layout_imgContact"/>
+    <TextView android:id="@+id/custom_layout_FirstName"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="#ffffff"
+
+        android:layout_toRightOf="@id/custom_layout_LastName" />
+    <TextView android:id="@+id/custom_layout_Age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="#ffffff"
+        android:layout_below="@id/custom_layout_LastName"
+        android:layout_toRightOf="@id/custom_layout_imgContact" />
+    <TextView android:id="@+id/custom_layout_City"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="14dp"
+        android:textColor="#ffffff"
+        android:layout_below="@id/custom_layout_Age"
+        android:layout_toRightOf="@id/custom_layout_imgContact" />
+    <ImageButton android:id="@+id/custom_layout_btnView"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/editContact"
+        android:layout_below="@+id/custom_layout_FirstName"
+        android:layout_toLeftOf="@+id/custom_layout_btnEdit"
+        android:layout_toStartOf="@+id/custom_layout_btnEdit"
+        android:src="@drawable/ic_search_white_24dp" />
+
+    <ImageButton android:id="@+id/custom_layout_btnEdit"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/editContact"
+        android:layout_below="@+id/custom_layout_FirstName"
+        android:layout_toLeftOf="@+id/custom_layout_btnDelete"
+        android:layout_toStartOf="@+id/custom_layout_btnDelete"
+        android:src="@drawable/ic_mode_edit_white_24dp" />
+    <ImageButton android:id="@+id/custom_layout_btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/deleteContact"
+        android:layout_alignTop="@+id/custom_layout_btnEdit"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_delete_white_24dp" />
+
+
+</RelativeLayout>
